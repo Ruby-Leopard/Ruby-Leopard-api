@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruby.Leopard.Api", "Ruby.Leopard.Api\Ruby.Leopard.Api.csproj", "{4C72259A-DC26-4F0C-9430-92FF14BC4445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruby.Leopard.Domain", "Ruby.Leopard.Domain\Ruby.Leopard.Domain.csproj", "{45BA8834-1E22-4DA1-BF53-888043413820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C72259A-DC26-4F0C-9430-92FF14BC4445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C72259A-DC26-4F0C-9430-92FF14BC4445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C72259A-DC26-4F0C-9430-92FF14BC4445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C72259A-DC26-4F0C-9430-92FF14BC4445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BA8834-1E22-4DA1-BF53-888043413820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BA8834-1E22-4DA1-BF53-888043413820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BA8834-1E22-4DA1-BF53-888043413820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BA8834-1E22-4DA1-BF53-888043413820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
