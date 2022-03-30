@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ruby.Leopard.Domain\Ruby.Leopard.Domain.csproj" />
+    <ProjectReference Include="..\Ruby-Leopard.Data\Ruby-Leopard.Data.csproj" />
   </ItemGroup>
 
 </Project>
