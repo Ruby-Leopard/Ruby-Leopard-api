@@ -1,4 +1,5 @@
 ﻿using Ruby.Leopard.Domain.Catalog;
+using Ruby.Leopard.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ruby.Leopard.Data
@@ -10,6 +11,8 @@ namespace Ruby.Leopard.Data
             { }
         
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<OrderItem> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
