@@ -1,0 +1,26 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Ruby.Leopard.Domain.Catalog;
+using Ruby.Leopard.Domain;
+
+namespace Ruby.Leopard.Domain.Tests;
+
+[TestClass]
+public class RatingTests
+{
+    [TestMethod]
+    public void Can_Create_New_Rating()
+    {
+        var rating = new Rating(1, "Mike", "Great fit!");
+
+        Assert.AreEqual(1, rating.Stars);
+        Assert.AreEqual("Mike", rating.UserName);
+        Assert.AreEqual("Great fit!", rating.Review);
+    }
+    [TestMethod]
+    [ExpectedException(typeOf(ArgumentException))]
+    public void Cannot_Create_Rating_With_Invalid_Stars()
+    {
+        var rating = new Rating(0, "Mike", "Great fit!");
+
+    }
+}
