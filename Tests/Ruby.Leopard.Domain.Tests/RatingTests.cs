@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ruby.Leopard.Domain.Catalog;
 using Ruby.Leopard.Domain;
 
 namespace Ruby.Leopard.Domain.Tests;
