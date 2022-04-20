@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruby.Leopard.Domain", "Ruby
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruby.Leopard.Data", "Ruby.Leopard.Data\Ruby.Leopard.Data.csproj", "{A3C66472-7E77-4835-A2AB-2297BD428ED3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruby.Leopard.Domain.Tests", "Tests\Ruby.Leopard.Domain.Tests\Ruby.Leopard.Domain.Tests.csproj", "{DC2B6478-4E86-4BAD-96A1-7E4924F29992}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,11 @@ Global
 		{A3C66472-7E77-4835-A2AB-2297BD428ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3C66472-7E77-4835-A2AB-2297BD428ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3C66472-7E77-4835-A2AB-2297BD428ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2B6478-4E86-4BAD-96A1-7E4924F29992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2B6478-4E86-4BAD-96A1-7E4924F29992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2B6478-4E86-4BAD-96A1-7E4924F29992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2B6478-4E86-4BAD-96A1-7E4924F29992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
