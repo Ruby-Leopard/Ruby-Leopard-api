@@ -1,7 +1,7 @@
 using Ruby.Leopard.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
-using Ruby.Leopard.Api.Security;
+using Ruby.Leopard.Api.Sequirty;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
