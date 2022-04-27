@@ -8,7 +8,7 @@ namespace Ruby.Leopard.Api.Sequirty
     {
         protected override Task HandleRequirementAsync(
             AuthorizationHandlerContext context,
-            HasScopeRequirements requirements)
+            HasScopeRequirements requirement)
         {
 
             if (!context.User.HasClaim(c => c.Type == "scope" && c.Issuer == requirements.Issuer))
