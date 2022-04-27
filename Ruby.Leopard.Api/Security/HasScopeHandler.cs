@@ -6,7 +6,7 @@ namespace Ruby.Leopard.Api.Sequirty
 {
     public class HasScopeHandler : AuthorizationHandler<HasScopeRequirements>
     {
-        protected override Task HansleRequirementAsync(
+        protected override Task HandleRequirementAsync(
             AuthorizationHandlerContext context,
             HasScopeRequirements requirements)
         {
