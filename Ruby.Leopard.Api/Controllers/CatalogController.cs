@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Ruby.Leopard.Domain.Catalog;
 using Ruby.Leopard.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ruby.Leopard.Api.Controllers
 {
