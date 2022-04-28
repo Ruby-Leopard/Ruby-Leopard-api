@@ -1,0 +1,29 @@
+### GET '/catalog' root with https
+GET https://localhost:7021/catalog
+
+### GET '/catalog' root with http
+GET http://localhost:5149/catalog
+
+### POST a new Item to the Catalog collection
+POST https://localhost:7021/catalog
+
+Content-Type: application/json
+
+{
+    "name": "Shoes",
+    "description": "Running Shoes",
+    "brand": "Nike",
+    "price": 109.99
+}
+
+### DELETE a Item to the Catalog collection
+curl --request DELETE \
+  --url https://localhost:7021/catalog/3 \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik41S0pjUTY1bThaMG5OMkZIRHR0OCJ9.eyJpc3MiOiJodHRwczovL3NpbHZhc2hqaC51cy5hdXRoMC5jb20vIiwic3ViIjoiaEhLS0J5dEp5RlhiaXFBOGNiejhCNjlHUmRWeEViRVVAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vUnVieS1MZW9wYXJkIiwiaWF0IjoxNjUxMTAzODc4LCJleHAiOjE2NTExOTAyNzgsImF6cCI6ImhIS0tCeXRKeUZYYmlxQThjYno4QjY5R1JkVnhFYkVVIiwic2NvcGUiOiJkZWxldGU6Y2F0YWxvZyIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.o7_vjS5s2PIuPzA-e6wneCJs5tP-updpJk8ObPRNu8up91ouHZ3TIKz_zHe81Gc7l3ULdYNjsMhAMlcSieImdpdcRGUGYgZHtzv29HvUOWZe0KWwsYWFnBqz23_YZQgmrKgKpp-4y9k5ICDNaOqCO9g94dA5dhz3YWZJnOgA7oxk_EaJ5pADKynaEKTmv8MrEyJx2ngXkRDTHjlTn7CCphmP-oZZE1PgOxNN5K-UEBF1SQGURiXGcm6S4eHqxI_0qPY4_gCHBD11KU3LYnuLvKIP8yHw_jW7J2gMiPGKMwze-CFT78fFaEt2-_rKKPeas4bDycvpoHMQX2pfi3R3Dw'
+
+
+### GET token from Auth0
+curl --request POST \
+  --url https://silvashjh.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '"client_id":"hHKKBytJyFXbiqA8cbz8B69GRdVxEbEU","client_secret":"vjn5xWwlgi0MOEn1_bbLwN1mnrGL8SdiX6hM3IH19AYm7bTjH30u9AmgfYmRN2jZ","audience":"https://Ruby-Leopard","grant_type":"client_credentials"'
