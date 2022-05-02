@@ -49,7 +49,7 @@ builder.Services.AddCors(Options =>
 {
     Options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000, https://ruby-leopard-api.azurewebsites.net")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
